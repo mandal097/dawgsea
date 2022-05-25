@@ -1,0 +1,105 @@
+.my_account {
+  width: 100%;
+  height: auto;
+  .my_account_wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    .my_account_header {
+      font-size: 3rem;
+      color: black;
+      font-weight: 500;
+      text-align: center;
+      font-family: var(--s-font);
+      margin: 1rem;
+    }
+    .delivery_details {
+      height: auto;
+      h3 {
+        font-size: 2.1rem;
+        color: rgba(0, 0, 0, 0.9);
+        margin-top: 1rem ;
+        font-weight: 600;
+        text-transform: capitalize;
+        font-family: var(--p-font);
+      }
+      .form {
+        width: 98%;
+        margin: 0 auto;
+        height: auto;
+        display: flex;
+        margin-bottom: 2rem;
+        //   align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        .input_div {
+          width: 48%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          margin-top: 3rem;
+          label {
+            font-size: 1.6rem;
+            color: black;
+            font-weight: 500;
+            color: rgba(0, 0, 0, 0.8);
+            margin-bottom: 0.3rem;
+          }
+          input {
+            height: 4rem;
+            font-size: 2rem;
+            padding: 0 1rem;
+            outline: none;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 0.4rem;
+          }
+        }
+        .textarea {
+          min-width: 100%;
+          margin-top: 3rem;
+          height: auto;
+          label {
+            margin-bottom: 0.3rem;
+          }
+          textarea {
+            height: 12rem;
+            resize: none;
+            min-width: 100%;
+            outline: none;
+            font-size: 2.1rem;
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            border-radius: 0.4rem;
+          }
+        }
+      }
+      .change_password {
+        width: 100%;
+        height: auto;
+        margin-bottom: 7rem;
+        .input_divs {
+          width: 100%;
+          display: flex;
+          justify-content: space-between;
+        }
+        .input_div {
+          margin: 0;
+          width: 30%;
+        }
+        .change_password_btn {
+          width: 15rem;
+          height: 4rem;
+          color: var(--btn-txt-col);
+          background-color: var(--main-col);
+          border: none;
+          border-radius: 0.4rem;
+          font-size: 1.5rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+          margin-top: 2rem;
+        }
+      }
+    }
+  }
+}

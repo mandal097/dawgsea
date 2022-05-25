@@ -1,20 +1,29 @@
 const router = require('express').Router();
-const auth = require('../../../middlewares/auth')
+const { auth } = require('../../../middlewares/auth')
 
 
-const registration = require('./auth/register')
-const login = require('./auth/login')
+const registration = require('./register')
+const login = require('./login')
 const getUser = require('./getUser')
-const updateProfile = require('./auth/updateProfile')
-const deleteUser = require('./auth/deleteUser')
-const resetPassword = require('./auth/resetPassword')
-const forgotPassword = require('./auth/forgotPassword')
+const updateProfile = require('./updateProfile')
+const deleteUser = require('./deleteUser')
+const resetPassword = require('./resetPassword')
+const forgotPassword = require('./forgotPassword')
 
+const adminRegister = require('./admin/register')
+const adminLogin = require('./admin/login')
+
+// admin
+
+router.use('/user/admin', adminRegister)
+
+router.use('/user/admin', adminLogin)
+
+// users
 
 router.use('/user', registration)
 
 router.use('/user', login)
-
 
 router.use('/user', forgotPassword)
 

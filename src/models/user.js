@@ -14,14 +14,10 @@ const userSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    followers: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }],
-    followings: [{
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'User'
-    }],
+    isAdmin: {
+        type: Boolean,
+        default: false
+    }
 }, { timestamps: true })
 
 const User = new mongoose.model('User', userSchema);

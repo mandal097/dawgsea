@@ -1,0 +1,116 @@
+.login {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  .login_form {
+    width: 50rem;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+    .img_logo {
+      width: 9rem;
+      height: 9rem;
+      border-radius: 50%;
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+    .header {
+      font-size: 2rem;
+      font-family: var(--s-font);
+      text-align: center;
+      font-weight: bold;
+      margin-top: 1rem;
+    }
+    .input_divs {
+      width: 85%;
+      height: auto;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      input {
+        height: 4rem;
+        margin-top: 2rem;
+        border-radius: 0.3rem;
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.4);
+        font-size: 2rem;
+        color: rgba(0, 0, 0, 0.7);
+        padding: 0 1rem;
+        font-weight: 300;
+        &[placeholder] {
+          font-size: 1.4rem;
+          padding: 0 1rem;
+        }
+      }
+    }
+    .hide_show {
+      width: 84%;
+      display: flex;
+      align-items: flex-end;
+      span {
+        text-align: left;
+        margin-left: auto;
+        font-size: 2rem;
+        font-weight: 500;
+        color: blue;
+        cursor: pointer;
+        &:hover {
+          color: rgb(41, 41, 197);
+        }
+      }
+    }
+    .login_btn {
+      width: 84%;
+      height: 4rem;
+      color: var(--btn-txt-col);
+      background-color: var(--main-col);
+      border: none;
+      border-radius: 0.4rem;
+      font-size: 1.5rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      cursor: pointer;
+      margin-top: 1rem;
+    }
+    .create_account{
+        width: 84%;
+        margin-top: 1rem;
+        p{
+            font-size: 1.2rem;
+            span{
+                font-size: 1.4rem;
+                color: blue;
+                cursor: pointer;
+                &:hover{
+                    color: rgb(41, 41, 197);
+                }
+            }
+        }
+    }
+    .forgot_password_ {
+      width: 84%;
+      margin-top: 1rem;
+      p {
+        margin-right: auto;
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: blue;
+        cursor: pointer;
+        &:hover {
+          color: rgb(41, 41, 197);
+        }
+      }
+    }
+  }
+}

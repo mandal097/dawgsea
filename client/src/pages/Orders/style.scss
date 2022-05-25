@@ -1,0 +1,79 @@
+.orders {
+  width: 100%;
+  height: auto;
+  margin-bottom: 5rem;
+  .orders_wrapper {
+    width: 1200px;
+    height: auto;
+    margin: 0 auto;
+    color: black;
+    .my_orders_header {
+      text-align: center;
+      margin: 1rem 0;
+      font-size: 3rem;
+      font-family: var(--s-font);
+      padding-bottom: 2rem;
+      border-bottom: 1px solid var(--main-col);
+    }
+    .my_orders {
+      width: 100%;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 2rem;
+      padding-top: 2rem;
+      .order_list {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        .orders_q {
+          display: flex;
+          height: 100%;
+          width: 100%;
+          margin-bottom: 2rem;
+          .img {
+            width: 8rem;
+            height: 8rem;
+            margin: 0 2rem;
+            img {
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .order_details {
+            width: 80%;
+            height: 100%;
+            border: 1px solid red;
+            padding: 2rem;
+            .product_name {
+              font-size: 1.6rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      .ctc_orders {
+        width: 40%;
+        height: 100%;
+        border: 1px solid red;
+        padding: 2rem;
+        .cancel_order {
+          width: 15rem;
+          height: 4rem;
+          color: var(--btn-txt-col);
+          background-color: var(--main-col);
+          border: none;
+          border-radius: 0.4rem;
+          font-size: 1.5rem;
+          margin: 0 2rem;
+          text-transform: uppercase;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
