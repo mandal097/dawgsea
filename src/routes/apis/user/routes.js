@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { auth } = require('../../../middlewares/auth')
+const { auth, authAdmin } = require('../../../middlewares/auth')
 
 
 const registration = require('./register')
@@ -12,12 +12,15 @@ const forgotPassword = require('./forgotPassword')
 
 const adminRegister = require('./admin/register')
 const adminLogin = require('./admin/login')
+const allUsers = require('./admin/allUser')
 
 // admin
 
 router.use('/user/admin', adminRegister)
 
-router.use('/user/admin', adminLogin)
+router.use('/user/admin', adminLogin);
+
+router.use('/user/admin', authAdmin, allUsers)
 
 // users
 

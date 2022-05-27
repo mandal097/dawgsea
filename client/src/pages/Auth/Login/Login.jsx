@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
 import './login.scss';
-import 'react-toastify/dist/ReactToastify.css';
 import FormFooter from '../FormFooter';
 import { AiOutlineEye, AiOutlineEyeInvisible } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom';
 import { useDispatch ,useSelector } from 'react-redux'
 import axios from 'axios';
 import { appUrl } from '../../../config/appUrl';
+import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer, toast } from 'react-toastify';
 import { loginFailure, loginStart, loginSuccess } from "../../../redux/userRedux"
 const Login = () => {

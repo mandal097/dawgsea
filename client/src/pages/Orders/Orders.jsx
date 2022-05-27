@@ -1,11 +1,12 @@
 import React from 'react'
 import './style.scss'
 const Orders = () => {
+
   return (
     <div className='orders'>
       <div className="orders_wrapper">
         <h2 className="my_orders_header">My orders</h2>
-{/*  */}
+        {/*  */}
 
         <div className="my_orders">
           <b style={{ fontSize: '1.4rem' }}>1.</b>
